@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBrandIcon from './NavBrandIcon.js';
+import NavSearchBox from './NavSearchBox.js';
 
 const Nav = styled.nav`
   background-color: #fafafa;
@@ -68,8 +69,8 @@ function Navbar() {
           <NavWidgets>
             <NavBrandIcon>
             </NavBrandIcon>
-            <SearchBox>
-            </SearchBox>
+            <NavSearchBox>
+            </NavSearchBox>
             <Account>
             </Account>
           </NavWidgets>

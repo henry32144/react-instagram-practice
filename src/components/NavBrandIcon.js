@@ -32,10 +32,10 @@ const Image = styled.img.attrs(props => ({
 function Navbar() {
   return (
     <Root>
-      <a tabindex="0" href="https://www.instagram.com/">
+      <a tabIndex="0" href="/">
         <FlexContainer>
           <ImageWrapper>
-            <Image></Image>
+            <Image />
           </ImageWrapper>
         </FlexContainer>
       </a>

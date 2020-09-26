@@ -1,5 +1,6 @@
+// Add this library to enable outline by tabindex only when using keyboard.
+import "focus-visible/dist/focus-visible.js";
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar.js'
 
