@@ -1,8 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import NavSearchResult from "./NavSearchResult.js"
 import { ClassicSpinner } from "react-spinners-kit";
-import { ReactComponent as SearchIcon } from '../assets/search.svg';
-import { ReactComponent as SearchClearIcon } from '../assets/x-circle-fill.svg';
+import { MyIGImageLink } from '../Constants'
+import { ReactComponent as SearchIcon } from "../assets/search.svg";
+import { ReactComponent as SearchClearIcon } from "../assets/x-circle-fill.svg";
+
 
 const Root = styled.div`
   flex: 0 1 auto;
@@ -110,25 +113,62 @@ const SpanSearchText = styled.span`
   white-space: nowrap;
 `;
 
-// const Image = styled.img.attrs(props => ({
-//   src: "/instagram.png",
-//   srcSet: "/instagram.png 1x, /instagram_2x.png 2x",
-// }))`
-//   max-height: 100%;
-//   max-width: 100%;
-//   object-fit: contain;
-// `;
-
-
 function NavSearchBox() {
 
   const searchInput = React.useRef(null);
   const [timer, setTimer] = React.useState(null);
   const [searchInputText, setSearchInputText] = React.useState("");
   const [isLoading, setLoading] = React.useState(false);
+  const [isSearched, setSearched] = React.useState(false);
   const [isSearchBoxFocused, setSearchBoxFocused] = React.useState(false);
+  const templateResultData = [
+    {
+      "userAccount": "henry32144",
+      "imageLink": MyIGImageLink,
+      "infoTitle": "henry32144",
+      "infoText": "承翰 吳",
+      "isVerified": false,
+    },
+    {
+      "userAccount": "tempAccount2",
+      "imageLink": undefined,
+      "infoTitle": "tempAccount2",
+      "infoText": "Temp Account 2",
+      "isVerified": false,
+    },
+    {
+      "userAccount": "tempAccount3",
+      "imageLink": undefined,
+      "infoTitle": "tempAccount3",
+      "infoText": "Temp Account 3",
+      "isVerified": true,
+    },
+    {
+      "userAccount": "tempAccount4",
+      "imageLink": undefined,
+      "infoTitle": "tempAccount4",
+      "infoText": "Temp Account 4",
+      "isVerified": false,
+    },
+    {
+      "userAccount": "tempAccount5",
+      "imageLink": undefined,
+      "infoTitle": "tempAccount5",
+      "infoText": "Temp Account 5",
+      "isVerified": true,
+    },
+    {
+      "userAccount": "tempAccount6",
+      "imageLink": undefined,
+      "infoTitle": "tempAccount6",
+      "infoText": "Temp Account 6",
+      "isVerified": false,
+    },
+  ];
 
   const searchInputOnChange = (event) => {
+
+    setSearchInputText(event.target.value);
 
     // Simulate searching behavior
     setLoading(true);
@@ -136,11 +176,15 @@ function NavSearchBox() {
       // Clear existing timer
       clearTimeout(timer);
     }
-    setTimer(setTimeout(setTimeout(() => {
+    setTimer(setTimeout(() => {
       setLoading(false);
-    }, 1500)));
-
-    setSearchInputText(event.target.value);
+      // Use ref to get "current" value.
+      if (searchInput.current.value.length > 0) {
+        setSearched(true);
+      } else {
+        setSearched(false);
+      }
+    }, 1500));
   };
 
   const searchInputOnFocus = () => {
@@ -149,8 +193,8 @@ function NavSearchBox() {
 
   const clearButtonOnClick = () => {
     setSearchInputText("");
+    setSearched(false);
     setSearchBoxFocused(false);
-    console.log(searchInputText)
   };
 
   return (
@@ -172,6 +216,11 @@ function NavSearchBox() {
               stroke="#c2c3c5"
             />
           </LeftSearchIconWrapper>
+          <BlurOverLay
+            onClick={() => {
+              setSearchBoxFocused(false);
+            }}
+          />
           <ClearButton
             onClick={clearButtonOnClick}
           >
@@ -186,12 +235,11 @@ function NavSearchBox() {
               />
             }
           </ClearButton>
-
-          <BlurOverLay
-            onClick={() => {
-              setSearchBoxFocused(false);
-            }}
-          />
+          {isSearched &&
+            <NavSearchResult
+              resultData={templateResultData} // Can also pass empty array to check empty placeholder
+            />
+          }
         </span>
         :
         <InputMaskContainer

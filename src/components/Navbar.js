@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import NavBrandIcon from './NavBrandIcon.js';
-import NavSearchBox from './NavSearchBox.js';
+import React from "react";
+import styled from "styled-components";
+import NavBrandIcon from "./NavBrandIcon.js";
+import NavSearchBox from "./NavSearchBox.js";
 
 const Nav = styled.nav`
   background-color: #fafafa;
@@ -19,11 +19,7 @@ const NavContainer = styled.div`
   z-index: 3;
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
-
-  /* Align center */
   align-items: center;
-
-  /* Animation */
   transition: height .2s ease-in-out;
 `;
 
@@ -31,23 +27,14 @@ const NavWidgets = styled.div`
   height: 54px;
   width: 100%;
   padding: 0 20px;
-
+  
   /* Leave spaces in two sides */
   max-width: 975px;
 
-  /* Align center */
   align-items: center;
-
-  /* Flex box */
   display: flex;
-
-  /* Flex direction */
   flex-direction: row;
-
-  /* Justify center */
   justify-content: center;
-
-  /* Animation */
   transition: height .2s ease-in-out;
 `;
 

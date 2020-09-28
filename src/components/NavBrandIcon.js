@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Root = styled.div`
   flex: 1 0 0%;
@@ -29,7 +29,7 @@ const Image = styled.img.attrs(props => ({
 `;
 
 
-function Navbar() {
+function NavBrandIcon() {
   return (
     <Root>
       <a tabIndex="0" href="/">
@@ -43,4 +43,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBrandIcon;

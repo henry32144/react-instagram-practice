@@ -1,0 +1,2 @@
+export const AvatarPlaceholderLink = "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=FvRIGkb-0bMAX9VmGqY&oh=e1ebe7c2767d00f61f59ed8755524d18&oe=5F9A258F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+export const MyIGImageLink = "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-19/s150x150/17494885_1009904985776995_7586261525891907584_a.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_ohc=EY1CvYg23LsAX-JPRFm&oh=75246819f904ef92a8f4b34957483b67&oe=5F9A59D6"
