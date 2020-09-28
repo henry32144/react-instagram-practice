@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NavBrandIcon from "./NavBrandIcon.js";
 import NavSearchBox from "./NavSearchBox.js";
+import NavAccount from "./NavAccount.js";
 
 const Nav = styled.nav`
   background-color: #fafafa;
@@ -38,16 +39,6 @@ const NavWidgets = styled.div`
   transition: height .2s ease-in-out;
 `;
 
-const SearchBox = styled.div`
-  background: blue;
-  min-height: 36px;
-`;
-
-const Account = styled.div`
-  background: red;
-  min-height: 36px;
-`;
-
 function Navbar() {
   return (
     <Nav>
@@ -58,8 +49,8 @@ function Navbar() {
             </NavBrandIcon>
             <NavSearchBox>
             </NavSearchBox>
-            <Account>
-            </Account>
+            <NavAccount>
+            </NavAccount>
           </NavWidgets>
         </NavContainer>
       </div>
