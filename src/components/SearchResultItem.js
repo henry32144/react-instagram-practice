@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { AvatarPlaceholderLink } from '../Constants'
+import Avatar from "./Avatar.js"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCertificate } from '@fortawesome/free-solid-svg-icons'
 
@@ -27,7 +27,7 @@ const Container = styled.div`
 `;
 
 const AvatarContainer = styled.div.attrs(props => ({
-  ariaDisabled: "false",
+  "aria-disabled": "false",
   role: "button",
   tabIndex: "-1",
 }))`
@@ -37,49 +37,6 @@ const AvatarContainer = styled.div.attrs(props => ({
   display: block;
   flex: none;
   justify-content: center;
-`;
-
-const AvatarImageWrapper = styled.span.attrs(props => ({
-  role: "link",
-  tabIndex: "-1",
-}))`
-  width: 32px;
-  height: 32px;
-  background-color: #fafafa;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: block;
-  flex: 0 0 auto;
-  overflow: hidden;
-  position: relative;
-`;
-
-const AvatarImage = styled.img.attrs(props => ({
-  alt: props.userAccount + " 的大頭貼照",
-  src: props.imageLink || AvatarPlaceholderLink,
-  draggable: "false",
-}))`
-  width: 32px;
-  height: 32px;
-  background-color: #fafafa;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: block;
-  flex: 0 0 auto;
-  overflow: hidden;
-  position: relative;
-  /* Add border */
-  ::after {
-    border: 1px solid rgba(0, 0, 0, .0975);
-    border-radius: 50%;
-    bottom: 0;
-    content: '';
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 `;
 
 const InfoContainer = styled.div`
@@ -143,12 +100,12 @@ function SearchResultItem(props) {
     >
       <Container>
         <AvatarContainer>
-          <AvatarImageWrapper>
-            <AvatarImage
-              userAccount={props.userAccount}
-              imageLink={props.imageLink}
-            />
-          </AvatarImageWrapper>
+          <Avatar
+            height="32px"
+            width="32px"
+            userAccount={props.userAccount}
+            imageLink={props.imageLink}
+          />
         </AvatarContainer>
         <InfoContainer>
           <InfoTitleWrapper>

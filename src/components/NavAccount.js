@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./Button.js"
 
 const Root = styled.div`
   align-content: center;
@@ -40,33 +41,11 @@ const ButtonWrapper = styled.a.attrs(props => ({
   font-size: 14px;
   margin-left: 15px;
 
-  :visited {
+  &:visited {
     color: #0095f6;
     font-weight: 600;
     line-height: 28px;
   }
-`;
-
-const LoginButton = styled.button.attrs(props => ({
-  type: "button",
-}))`
-
-  border: 1px solid #0095f6;
-  background-color: #0095f6;
-  border-radius: 4px;
-  color: #fff;
-  position: relative;
-  appearance: none;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: block;
-  font-weight: 600;
-  padding: 5px 9px;
-  text-align: center;
-  text-transform: inherit;
-  text-overflow: ellipsis;
-  user-select: none;
-  width: auto;
 `;
 
 
@@ -78,9 +57,9 @@ function NavAccount() {
           <ButtonWrapper
             href="https://www.instagram.com/accounts/login/?next=%2Fmemopresso%2F&source=desktop_nav"
           >
-            <LoginButton>
+            <Button>
               登入
-            </LoginButton>
+            </Button>
           </ButtonWrapper>
           <ButtonWrapper
             href="https://www.instagram.com/accounts/emailsignup/"

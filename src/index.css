@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body,
 button,
 input,
@@ -30,6 +32,15 @@ a:visited {
   text-decoration: none;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
+.test {
+  color: #00376b;
+}
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -48,6 +59,28 @@ a:visited {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #a5a7aa;
+}
+
+/* Animations for stories sliding */
+.slide-right-enter {
+  transform: translateX(0);
+}
+.slide-right-enter-active {
+  transform: translateX(-433px);
+  transition: transform 949.218ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.slide-right-enter-done {
+  transform: translateX(-433px);
+}
+.slide-right-exit {
+  transform: translateX(-433px);
+}
+.slide-right-exit-active {
+  transform: translateX(0);
+  transition: transform 949.218ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.slide-right-exit-done {
+  transform: translateX(0);
 }
 
 /* Styles below are base css*/

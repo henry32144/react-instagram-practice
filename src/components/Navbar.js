@@ -39,9 +39,20 @@ const NavWidgets = styled.div`
   transition: height .2s ease-in-out;
 `;
 
+// This placeholder let main content placed below navbar.
+const NavPlaceholder = styled.div`
+  flex-basis: 55px;
+
+  @media (min-width: 1000px) {
+    flex-basis: 54px;
+  }
+`;
+
+
 function Navbar() {
   return (
     <Nav>
+      <NavPlaceholder/>
       <div>
         <NavContainer>
           <NavWidgets>

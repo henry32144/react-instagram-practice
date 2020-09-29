@@ -58,7 +58,7 @@ const LeftSearchIconWrapper = styled.span`
 `;
 
 const ClearButton = styled.div.attrs(props => ({
-  ariaDisabled: false,
+  "aria-disabled": false,
   role: "button",
   tabIndex: "0",
 }))`
