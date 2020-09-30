@@ -3,7 +3,7 @@
   "name": "Practice to make an instagram page",
   "icons": [
   ],
-  "start_url": "./",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
