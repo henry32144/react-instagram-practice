@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "./react-instagram-practice/static/css/main.4cd7a186.chunk.css",
-    "main.js": "./react-instagram-practice/static/js/main.fd9b6804.chunk.js",
-    "main.js.map": "./react-instagram-practice/static/js/main.fd9b6804.chunk.js.map",
-    "runtime-main.js": "./react-instagram-practice/static/js/runtime-main.189474a0.js",
-    "runtime-main.js.map": "./react-instagram-practice/static/js/runtime-main.189474a0.js.map",
-    "static/js/2.e69b609e.chunk.js": "./react-instagram-practice/static/js/2.e69b609e.chunk.js",
-    "static/js/2.e69b609e.chunk.js.map": "./react-instagram-practice/static/js/2.e69b609e.chunk.js.map",
-    "index.html": "./react-instagram-practice/index.html",
-    "precache-manifest.d9c2deb3d2a5230b449cf8ee1c31013c.js": "./react-instagram-practice/precache-manifest.d9c2deb3d2a5230b449cf8ee1c31013c.js",
-    "service-worker.js": "./react-instagram-practice/service-worker.js",
-    "static/css/main.4cd7a186.chunk.css.map": "./react-instagram-practice/static/css/main.4cd7a186.chunk.css.map",
-    "static/js/2.e69b609e.chunk.js.LICENSE.txt": "./react-instagram-practice/static/js/2.e69b609e.chunk.js.LICENSE.txt",
-    "static/media/search.a563ba33.svg": "./react-instagram-practice/static/media/search.a563ba33.svg",
-    "static/media/x-circle-fill.c7faf4a1.svg": "./react-instagram-practice/static/media/x-circle-fill.c7faf4a1.svg"
+    "main.css": "/react-instagram-practice/static/css/main.4cd7a186.chunk.css",
+    "main.js": "/react-instagram-practice/static/js/main.eb843593.chunk.js",
+    "main.js.map": "/react-instagram-practice/static/js/main.eb843593.chunk.js.map",
+    "runtime-main.js": "/react-instagram-practice/static/js/runtime-main.f34991b7.js",
+    "runtime-main.js.map": "/react-instagram-practice/static/js/runtime-main.f34991b7.js.map",
+    "static/js/2.c022630a.chunk.js": "/react-instagram-practice/static/js/2.c022630a.chunk.js",
+    "static/js/2.c022630a.chunk.js.map": "/react-instagram-practice/static/js/2.c022630a.chunk.js.map",
+    "index.html": "/react-instagram-practice/index.html",
+    "precache-manifest.f0dfa9a7046966baa35063f61cc79cf7.js": "/react-instagram-practice/precache-manifest.f0dfa9a7046966baa35063f61cc79cf7.js",
+    "service-worker.js": "/react-instagram-practice/service-worker.js",
+    "static/css/main.4cd7a186.chunk.css.map": "/react-instagram-practice/static/css/main.4cd7a186.chunk.css.map",
+    "static/js/2.c022630a.chunk.js.LICENSE.txt": "/react-instagram-practice/static/js/2.c022630a.chunk.js.LICENSE.txt",
+    "static/media/search.a563ba33.svg": "/react-instagram-practice/static/media/search.a563ba33.svg",
+    "static/media/x-circle-fill.c7faf4a1.svg": "/react-instagram-practice/static/media/x-circle-fill.c7faf4a1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.189474a0.js",
-    "static/js/2.e69b609e.chunk.js",
+    "static/js/runtime-main.f34991b7.js",
+    "static/js/2.c022630a.chunk.js",
     "static/css/main.4cd7a186.chunk.css",
-    "static/js/main.fd9b6804.chunk.js"
+    "static/js/main.eb843593.chunk.js"
   ]
 }
