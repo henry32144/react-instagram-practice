@@ -118,7 +118,7 @@ const TextWrapper = styled.span`
 
 
 function MidNavigation(props) {
-  const [activeId, setActiveId] = React.useState(1);
+  const [activeId, setActiveId] = React.useState(NAV_POST_ID);
 
   return (
     <Root>

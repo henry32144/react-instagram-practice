@@ -4,20 +4,10 @@ import { ClassicSpinner } from "react-spinners-kit";
 import { PostItem, PostItemPlaceholder } from "./PostItem.js";
 import { TEMP_POSTS } from "../Constants.js";
 import uuid from 'uuid';
-
 import {
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
-
-// const Main = styled.main.attrs(props => ({
-//   role: "main",
-// }))`
-//   background-color: #fafafa;
-//   flex-grow: 1;
-//   -webkit-box-ordinal-group: 5;
-//   order: 4;
-// `;
 
 const Root = styled.div`
   @media (max-width: 735px) {
@@ -64,7 +54,6 @@ const LoadingSpinnerWrapper = styled.div`
   }
 `
 
-
 const LoadMoreButton = styled.button.attrs(props => ({
   "type": "button",
 }))`
@@ -107,9 +96,15 @@ const LoadMoreButton = styled.button.attrs(props => ({
   }
 `
 
-// Helper function for split array into chunks
+/* 
+  Helper function for split array into chunks
+  Return format: [{
+    rowId: string,
+    rowData: [ postItemObject or undefined) ]
+    ]
+  }]
+*/
 function splitChunk(array, splitNum) {
-  var chunkedArray = [];
   if (!Array.isArray(array) || array.length < 1) {
     // Not a valid array
     throw new TypeError('Input of splitChunk is not valid');
@@ -119,32 +114,36 @@ function splitChunk(array, splitNum) {
     throw new TypeError('Input of splitNum is not valid');
   }
 
-  if (array.length > splitNum) {
-    // Need to be chunked
-    // Chunk first splitNum element in array
-    // Then use recursive methods to process the remaining array 
-    chunkedArray = [array.slice(0, splitNum), ...splitChunk(array.slice(splitNum), splitNum)];
-  } else {
-    var remainingLength = splitNum - array.length;
+  var chunkedArray = [];
 
-    if (remainingLength > 0) {
-      // Append undefined to splitNum length
+  var rowNumbers = Math.ceil(array.length / splitNum);
+  // Calculate how many placeholders should we put
+  var remainingLength = (rowNumbers * splitNum) - array.length;
+
+  for (var i = 0; i < rowNumbers; i++) {
+    var row = {
+      rowId: uuid(),
+    };
+    if (i === rowNumbers - 1) {
+      // The last group
       var tempArray = new Array(remainingLength).fill(undefined);
-      chunkedArray = [array.concat(tempArray)];
+      row["rowData"] = array.slice(i * splitNum).concat(tempArray);
+      chunkedArray.push(row);
     } else {
-      // No need to chunk
-      chunkedArray = [array];
+      // Load next splitNum post
+      row["rowData"] = array.slice(i * splitNum, i * splitNum + splitNum);
+      chunkedArray.push(row);
     }
   }
   return chunkedArray;
 }
 
+
 function Posts(props) {
-  const postArray = props.postArray;
-  const posts = postArray.map((row, index) =>
-    <PostRow key={uuid()}>
+  const posts = props.postArray.map((row) =>
+    <PostRow key={row.rowId}>
       {
-        row.map((item) => {
+        row.rowData.map((item) => {
           return item === undefined
             ?
             <PostItemPlaceholder key={uuid()} />
@@ -163,7 +162,9 @@ function Posts(props) {
     </PostRow>
   )
   return (
-    posts
+    <PostContainer>
+      {posts}
+    </PostContainer>
   );
 }
 
@@ -207,11 +208,9 @@ function PostSection(props) {
     <Root>
       <Article>
         <div>
-          <PostContainer>
-            <Posts
-              postArray={loadedPostChunks}
-            />
-          </PostContainer>
+          <Posts
+            postArray={loadedPostChunks}
+          />
         </div>
       </Article>
       {isLoading &&
