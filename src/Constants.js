@@ -7,7 +7,7 @@ export const NAV_IGTV_ID = 1;
 export const NAV_TAGGED_ID = 2;
 
 // seconds
-export const TOP_PROGRESSBAR_TIME = 1.25;
+export const TOP_PROGRESSBAR_TIME = 0.8;
 
 export const TEMP_RESULT_DATA = [
   {

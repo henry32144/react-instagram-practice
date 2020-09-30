@@ -5,6 +5,7 @@ import styled from "styled-components";
 import "./App.css";
 import Navbar from "./components/Navbar.js";
 import MainContent from "./components/MainContent.js";
+import Footer from "./components/Footer.js";
 import TopProgressBar from "./components/TopProgressBar.js";
 import { TOP_PROGRESSBAR_TIME } from "./Constants.js";
 
@@ -52,6 +53,7 @@ function App() {
       <MainContent
         setProgressLoading={triggerLoading}
       />
+      <Footer/>
     </AppSection>
   );
 }

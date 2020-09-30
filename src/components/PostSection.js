@@ -54,6 +54,16 @@ const LoadingSpinnerWrapper = styled.div`
   }
 `
 
+const NoMorePostText = styled.span`
+  text-align: center;
+  font-size: 20px;
+
+  @media (max-width: 735px) {
+    margin-top: 28px;
+    margin-bottom: 14px;
+  }
+`
+
 const LoadMoreButton = styled.button.attrs(props => ({
   "type": "button",
 }))`
@@ -141,29 +151,38 @@ function splitChunk(array, splitNum) {
 
 function Posts(props) {
   const posts = props.postArray.map((row) =>
-    <PostRow key={row.rowId}>
-      {
-        row.rowData.map((item) => {
-          return item === undefined
-            ?
-            <PostItemPlaceholder key={uuid()} />
-            :
-            <PostItem
-              key={item.href}
-              imgAlt={item.imgAlt}
-              href={item.href}
-              src={item.src}
-              likeNumber={item.likeNumber}
-              commentNumber={item.commentNumber}
-            />
+    <CSSTransition
+      key={row.rowId + "animation"}
+      timeout={800}
+      classNames="post-item"
+    >
+      <PostRow key={row.rowId}>
+        {
+          row.rowData.map((item) => {
+            return item === undefined
+              ?
+              <PostItemPlaceholder key={uuid()} />
+              :
+              <PostItem
+                key={item.href}
+                imgAlt={item.imgAlt}
+                href={item.href}
+                src={item.src}
+                likeNumber={item.likeNumber}
+                commentNumber={item.commentNumber}
+              />
+          }
+          )
         }
-        )
-      }
-    </PostRow>
+      </PostRow>
+    </CSSTransition>
+
   )
   return (
     <PostContainer>
-      {posts}
+      <TransitionGroup className="todo-list">
+        {posts}
+      </TransitionGroup>
     </PostContainer>
   );
 }
@@ -213,6 +232,7 @@ function PostSection(props) {
           />
         </div>
       </Article>
+
       {isLoading &&
         <LoadingSpinnerWrapper>
           <ClassicSpinner
@@ -222,11 +242,15 @@ function PostSection(props) {
           />
         </LoadingSpinnerWrapper>
       }
-      <LoadMoreButton
-        onClick={() => loadPost()}
-      >
-        Load More
-      </LoadMoreButton>
+      {loadedPostNum >= totalPostNum ?
+        <NoMorePostText>You have loaded all posts!</NoMorePostText>
+        :
+        <LoadMoreButton
+          onClick={() => loadPost()}
+        >
+          Load More
+          </LoadMoreButton>
+      }
     </Root>
   );
 }

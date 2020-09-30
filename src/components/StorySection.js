@@ -100,7 +100,7 @@ function StorySection() {
   }
 
   const [slideRight, setSlideRight] = React.useState(false);
-  const [stories, setStories] = React.useState(storyTemplate);
+  const [stories] = React.useState(storyTemplate);
   const scrollRef = React.useRef(null);
 
   const storyItems = stories.map((item) =>

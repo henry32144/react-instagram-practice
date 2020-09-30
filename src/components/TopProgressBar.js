@@ -53,7 +53,7 @@ const Shrinker = styled(ProgressBarChild)`
         animation-name: ${timelapse};
         animation-fill-mode: forwards;
         animation-duration: ${TOP_PROGRESSBAR_TIME}s;
-        animation-timing-function: cubic-bezier(.86, .05, .4, .96);
+        animation-timing-function: cubic-bezier(1., .4, .6, .96);
       `;
     }
   }}

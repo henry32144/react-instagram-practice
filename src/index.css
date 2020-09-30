@@ -88,7 +88,7 @@ ul {
 }
 .post-item-enter-active {
   opacity: 1;
-  transition: all 0.4s ease-out;
+  transition: opacity 0.8s ease-out;
 }
 
 /* Styles below are base css*/

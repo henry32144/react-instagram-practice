@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NavSearchResult from "./NavSearchResult.js"
 import { ClassicSpinner } from "react-spinners-kit";
-import { MyIGImageLink, TEMP_RESULT_DATA } from '../Constants'
+import { TEMP_RESULT_DATA } from '../Constants'
 import { ReactComponent as SearchIcon } from "../assets/search.svg";
 import { ReactComponent as SearchClearIcon } from "../assets/x-circle-fill.svg";
 
