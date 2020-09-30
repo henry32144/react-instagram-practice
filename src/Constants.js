@@ -1,3 +1,218 @@
 export const AvatarPlaceholderLink = "https://instagram.fsub8-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fsub8-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=FvRIGkb-0bMAX9VmGqY&oh=e1ebe7c2767d00f61f59ed8755524d18&oe=5F9A258F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
 export const MyIGImageLink = "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-19/s150x150/17494885_1009904985776995_7586261525891907584_a.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_ohc=EY1CvYg23LsAX-JPRFm&oh=75246819f904ef92a8f4b34957483b67&oe=5F9A59D6"
 export const LargeAvatarLink = "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_ohc=FvRIGkb-0bMAX_bxgoa&oh=c6c227c2e699dc8053935eda8fa646b8&oe=5F9A258F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+
+export const NAV_POST_ID = 0;
+export const NAV_IGTV_ID = 1;
+export const NAV_TAGGED_ID = 2;
+
+// seconds
+export const TOP_PROGRESSBAR_TIME = 1.25;
+
+export const TEMP_RESULT_DATA = [
+  {
+    "userAccount": "henry32144",
+    "imageLink": MyIGImageLink,
+    "infoTitle": "henry32144",
+    "infoText": "承翰 吳",
+    "isVerified": false,
+  },
+  {
+    "userAccount": "tempAccount2",
+    "imageLink": undefined,
+    "infoTitle": "tempAccount2",
+    "infoText": "Temp Account 2",
+    "isVerified": false,
+  },
+  {
+    "userAccount": "tempAccount3",
+    "imageLink": undefined,
+    "infoTitle": "tempAccount3",
+    "infoText": "Temp Account 3",
+    "isVerified": true,
+  },
+  {
+    "userAccount": "tempAccount4",
+    "imageLink": undefined,
+    "infoTitle": "tempAccount4",
+    "infoText": "Temp Account 4",
+    "isVerified": false,
+  },
+  {
+    "userAccount": "tempAccount5",
+    "imageLink": undefined,
+    "infoTitle": "tempAccount5",
+    "infoText": "Temp Account 5",
+    "isVerified": true,
+  },
+  {
+    "userAccount": "tempAccount6",
+    "imageLink": undefined,
+    "infoTitle": "tempAccount6",
+    "infoText": "Temp Account 6",
+    "isVerified": false,
+  },
+];
+
+export const TEMP_POSTS = [
+  {
+    "key": 0,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BWFRJNjgsGD/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/19762028_334416403655324_4718486698139320320_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=sy9LMTD07X8AX9NHjmE&oh=baf3bb68ea35d69621b390062ca01e61&oe=5F9E6E74",
+    "likeNumber": "48",
+    "commentNumber": "6",
+  },
+  {
+    "key": 1,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BU5dQo5g5jU/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/18879772_164410647429992_3035158099938770944_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=AHf_zJlvtCQAX8dYhh1&oh=53d2c7c9dbdd6180dc8b4f7a7deac882&oe=5F9C93F5",
+    "likeNumber": "48",
+    "commentNumber": "6",
+  },
+  {
+    "key": 2,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BUDpVLZgWAB/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/18512657_1939553976290851_6541187685174738944_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=107&_nc_ohc=z0TS_u6-NnUAX9pCQFF&oh=0633490b412b3411a138f830a52217ec&oe=5F9C9578",
+    "likeNumber": "35",
+    "commentNumber": "4",
+  },
+  {
+    "key": 3,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BTYwWacg-62/",
+    "src": "https://instagram.ftpe8-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/18160911_1452011218182421_2752388860603269120_n.jpg?_nc_ht=instagram.ftpe8-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=pMlt1xHqKeEAX8TuF1b&oh=b7330866b829acbb03a005c68305479e&oe=5F9D55B1",
+    "likeNumber": "27",
+    "commentNumber": "4",
+  },
+  {
+    "key": 4,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BS6L4lrgYF0/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/17818558_1417887181604261_714208363600150528_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=eLmrqxPIVEYAX88gw9w&oh=649c9e7d5c4a4395e447f083c805aee8&oe=5F9D11D3",
+    "likeNumber": "60",
+    "commentNumber": "6",
+  },
+  {
+    "key": 5,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BSdM6aogsnB/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/17438066_255032798295247_2984924583351549952_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=107&_nc_ohc=amuZRC40uTsAX999rIK&oh=61351d55802806d8bfcf6f3756db0173&oe=5F9CDA75",
+    "likeNumber": "41",
+    "commentNumber": "6",
+  },
+  {
+    "key": 6,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BSDgKHpAmag/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/e35/s480x480/17439305_177547439425684_1416365865011511296_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=KLa2AeaLHlQAX_im8as&_nc_tp=15&oh=20281d16646ab79805d3405ab095513a&oe=5F9C736A",
+    "likeNumber": "31",
+    "commentNumber": "NaN",
+  },
+  {
+    "key": 7,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BQ5dxoxA79f/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/16906320_1860269450887806_4014937129107849216_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=106&_nc_ohc=dwQjRJ7-N1MAX-5AZbt&oh=a3de4e61c1299ebd88400093052da64e&oe=5F9CF4E5",
+    "likeNumber": "67",
+    "commentNumber": "23",
+  },
+  {
+    "key": 8,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BQu39GjgNzZ/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.134.1080.1080a/s640x640/16585194_963986710369871_7465850756243914752_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=111&_nc_ohc=LLHcVORE9BEAX9jN7pg&oh=ed3c47f1d39cb82b6529c7a7df5603fd&oe=5F9CBB0C",
+    "likeNumber": "40",
+    "commentNumber": "1",
+  },
+  {
+    "key": 9,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BQoWeoKAn4S/",
+    "src": "https://instagram.ftpe8-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/16584889_597729133757893_2671645395288850432_n.jpg?_nc_ht=instagram.ftpe8-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=LV-57p2thjAAX-ATXg9&oh=21fb401f380765c203591cf2758dc2f2&oe=5F9C31A3",
+    "likeNumber": "35",
+    "commentNumber": "5",
+  },
+  {
+    "key": 10,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BPesKwMFRAB/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.134.1080.1080a/s640x640/15877513_583103991885854_164273866187735040_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=xN24KWhmXR8AX_-KWl8&oh=f00341e5e7c3964615f7192134a54c9b&oe=5F9CCB74",
+    "likeNumber": "39",
+    "commentNumber": "3",
+  },
+  {
+    "key": 11,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BPaOwOBFCZ5/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/e35/c0.134.1080.1080a/s480x480/13712578_780201272122411_586671788_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=107&_nc_ohc=Ql3qdsiezHMAX-11fj9&_nc_tp=16&oh=f32dfd3923bbbf20969384eabaefbaab&oe=5F9D6CDA",
+    "likeNumber": "35",
+    "commentNumber": "2",
+  },
+  {
+    "key": 12,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BIFO-vHA_2u/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/16110332_453669048356645_2339241589735424000_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=ffQMB4AuB_4AX_s5HSo&oh=bd4cce0b6175b42d139db5cab2cbad27&oe=5F9EEABA",
+    "likeNumber": "92",
+    "commentNumber": "14",
+  },
+  {
+    "key": 13,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/BFJX_meOYBT/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/13129848_1684521371788481_1954314326_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=B8PaxprS8S4AX-nrhP0&oh=ce85e3f3642529a5b1b26f839371884d&oe=5F9CA995",
+    "likeNumber": "75",
+    "commentNumber": "24",
+  },
+  {
+    "key": 14,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/-3yci7uYDE/",
+    "src": "https://instagram.ftpe8-2.fna.fbcdn.net/v/t51.2885-15/e35/s320x320/12346050_1539629753024163_2070861218_n.jpg?_nc_ht=instagram.ftpe8-2.fna.fbcdn.net&_nc_cat=103&_nc_ohc=MNa_8OZrKPcAX9h_X2E&_nc_tp=15&oh=15e3007082c00759c34480448d1e2cfd&oe=5F9BFF9D",
+    "likeNumber": "75",
+    "commentNumber": "24",
+  },
+  {
+    "key": 15,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/7foYgGuYCw/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/e15/11849242_170059966660722_1862396120_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=106&_nc_ohc=GBS9j4AlWh8AX_KFJx8&_nc_tp=18&oh=ebc715eb6e26cfd3564102f75aeccca6&oe=5F9DF2EF",
+    "likeNumber": "76",
+    "commentNumber": "12",
+  },
+  {
+    "key": 16,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/3W-drMOYHR/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/e15/s320x320/11374722_1075865892440998_925254282_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=fTwT5xxDKL4AX_t6N5Y&_nc_tp=15&oh=652006fb4569ec00b8bbf5a65f2bf85b&oe=5F767B9C",
+    "likeNumber": "66",
+    "commentNumber": "17",
+  },
+  {
+    "key": 17,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/3UWp5eOYD-/",
+    "src": "https://instagram.ftpe8-1.fna.fbcdn.net/v/t51.2885-15/e15/10665606_797949776939914_1930438479_n.jpg?_nc_ht=instagram.ftpe8-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=z2K7dvCMFpUAX_0qzuF&_nc_tp=18&oh=722e6ddd35074a1e4676912439b228c5&oe=5F9F89A9",
+    "likeNumber": "29",
+    "commentNumber": "4",
+  },
+  {
+    "key": 18,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/3R7J3sOYLq/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/e15/11379722_367746183422275_872125179_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=107&_nc_ohc=TXXIRkFs1AcAX9q436L&_nc_tp=18&oh=84ff7f3d636e0852b126e94e0987ea85&oe=5F9D6662",
+    "likeNumber": "22",
+    "commentNumber": "1",
+  },
+  {
+    "key": 19,
+    "imgAlt": "A Photo",
+    "href": "https://www.instagram.com/p/3QzUYNuYLA/",
+    "src": "https://instagram.ftpe8-3.fna.fbcdn.net/v/t51.2885-15/e15/11357325_1611417872404115_925396660_n.jpg?_nc_ht=instagram.ftpe8-3.fna.fbcdn.net&_nc_cat=111&_nc_ohc=Ezis7nrTRHsAX-GC2rM&_nc_tp=18&oh=84bcf6db55f9fc7f073551359324af82&oe=5F9DD607",
+    "likeNumber": "24",
+    "commentNumber": "9",
+  },
+]

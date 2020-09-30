@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Avatar from "./Avatar.js"
-import Overview from "./Overview.js"
+import { Overview } from "./Overview.js"
 import { Description } from "./Description.js"
 import { FollowButton, FollowButtonXS } from "./FollowButton.js"
 import { LargeAvatarLink } from '../Constants'
@@ -42,7 +42,7 @@ const AvatarSection = styled.div`
 
 const AvatarWrapper = styled.div.attrs(props => ({
   className: "test",
-  ariaDisabled: "true",
+  "aria-disabled": "true",
   role: "button",
   tabIndex: "-1",
 }))`

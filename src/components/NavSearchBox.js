@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NavSearchResult from "./NavSearchResult.js"
 import { ClassicSpinner } from "react-spinners-kit";
-import { MyIGImageLink } from '../Constants'
+import { MyIGImageLink, TEMP_RESULT_DATA } from '../Constants'
 import { ReactComponent as SearchIcon } from "../assets/search.svg";
 import { ReactComponent as SearchClearIcon } from "../assets/x-circle-fill.svg";
 
@@ -121,50 +121,6 @@ function NavSearchBox() {
   const [isLoading, setLoading] = React.useState(false);
   const [isSearched, setSearched] = React.useState(false);
   const [isSearchBoxFocused, setSearchBoxFocused] = React.useState(false);
-  const templateResultData = [
-    {
-      "userAccount": "henry32144",
-      "imageLink": MyIGImageLink,
-      "infoTitle": "henry32144",
-      "infoText": "承翰 吳",
-      "isVerified": false,
-    },
-    {
-      "userAccount": "tempAccount2",
-      "imageLink": undefined,
-      "infoTitle": "tempAccount2",
-      "infoText": "Temp Account 2",
-      "isVerified": false,
-    },
-    {
-      "userAccount": "tempAccount3",
-      "imageLink": undefined,
-      "infoTitle": "tempAccount3",
-      "infoText": "Temp Account 3",
-      "isVerified": true,
-    },
-    {
-      "userAccount": "tempAccount4",
-      "imageLink": undefined,
-      "infoTitle": "tempAccount4",
-      "infoText": "Temp Account 4",
-      "isVerified": false,
-    },
-    {
-      "userAccount": "tempAccount5",
-      "imageLink": undefined,
-      "infoTitle": "tempAccount5",
-      "infoText": "Temp Account 5",
-      "isVerified": true,
-    },
-    {
-      "userAccount": "tempAccount6",
-      "imageLink": undefined,
-      "infoTitle": "tempAccount6",
-      "infoText": "Temp Account 6",
-      "isVerified": false,
-    },
-  ];
 
   const searchInputOnChange = (event) => {
 
@@ -237,7 +193,7 @@ function NavSearchBox() {
           </ClearButton>
           {isSearched &&
             <NavSearchResult
-              resultData={templateResultData} // Can also pass empty array to check empty placeholder
+              resultData={TEMP_RESULT_DATA} // Can also pass empty array to check empty placeholder
             />
           }
         </span>

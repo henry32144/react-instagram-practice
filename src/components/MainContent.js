@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import MainHeader from "./MainHeader.js";
 import StorySection from "./StorySection.js";
-import { DescriptionXS } from "./Description.js"
+import MidNavigation from "./MidNavigation.js";
+import PostSection from "./PostSection.js";
+import { OverviewXS } from "./Overview.js";
+import { DescriptionXS } from "./Description.js";
 
 const Main = styled.main.attrs(props => ({
   role: "main",
@@ -26,7 +29,7 @@ const Container = styled.div`
   }
 `
 
-function MainContent() {
+function MainContent(props) {
   return (
     <Main>
       <Container>
@@ -34,6 +37,11 @@ function MainContent() {
         {/* Display only when screen size is small than 736px */}
         <DescriptionXS/>
         <StorySection/>
+        <OverviewXS/>
+        <MidNavigation
+          setProgressLoading={props.setProgressLoading}
+        />
+        <PostSection></PostSection>
       </Container>
     </Main>
   );
