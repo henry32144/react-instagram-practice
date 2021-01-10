@@ -18,6 +18,8 @@
 
 Practice using React.js to build a Instagram like page.
 
+[DEMO](https://henry32144.github.io/react-instagram-practice/)
+
 ### Built With
 * [React.js](https://reactjs.org/)
 * [styled components](https://styled-components.com/)
