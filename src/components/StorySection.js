@@ -94,7 +94,7 @@ function StorySection() {
       "position": i,
       "text": "Cat " + (i + 1),
       "key": i,
-      "imgLink": "/cat" + (i + 1) + ".jpg",
+      "imgLink": "./cat" + (i + 1) + ".jpg",
     }
     storyTemplate.push(story);
   }

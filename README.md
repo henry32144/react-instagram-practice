@@ -55,6 +55,6 @@ npm start
 <!-- LICENSE -->
 ## License
 
-Instagram related icons are belong to Instagram, Facebook, Inc..
+Instagram related icons belong to Instagram, Facebook, Inc..
 
 Distributed under the MIT License. See `LICENSE` for more information.

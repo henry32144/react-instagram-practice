@@ -20,8 +20,8 @@ const ImageWrapper = styled.div`
 `;
 
 const Image = styled.img.attrs(props => ({
-  src: "/instagram.png",
-  srcSet: "/instagram.png 1x, /instagram_2x.png 2x",
+  src: "./instagram.png",
+  srcSet: "./instagram.png 1x, ./instagram_2x.png 2x",
 }))`
   max-height: 100%;
   max-width: 100%;
