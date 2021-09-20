@@ -131,7 +131,7 @@ function MainHeader(props) {
             height="inherit"
             width="inherit"
             userAccount={props.userAccount || "userAccount"}
-            imageLink={props.imageLink || LargeAvatarLink}
+            imageLink={"./portfolio-image.jpg"}
           />
         </AvatarWrapper>
       </AvatarSection>
